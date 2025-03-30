@@ -3,8 +3,11 @@
 # Live website - https://dev-blog-by-saurabh.netlify.app/
 
 # Website snapshots:
-<img width="1378" alt="image" src="https://github.com/user-attachments/assets/da8978db-1682-479e-880a-0a9def10aa7b" />
+<img width="1382" alt="image" src="https://github.com/user-attachments/assets/a02c4f95-95da-4d92-9408-0a4aac50af99" />
+<img width="1371" alt="image" src="https://github.com/user-attachments/assets/283e686b-12f4-4754-8f75-c7fa36744479" />
 <img width="1367" alt="image" src="https://github.com/user-attachments/assets/5df1247e-bab6-463d-b1e7-1e6527b17213" />
+<img width="1351" alt="image" src="https://github.com/user-attachments/assets/93b6a379-3b43-488d-8d60-e1556751d43c" />
+
 
 ## Project Overview
 DevBlog is a modern, feature-rich technical blog platform built for developers to share insights, tutorials, and best practices in software development. The application provides a rich reading experience with features like article categorization, likes, comments, and user authentication.
