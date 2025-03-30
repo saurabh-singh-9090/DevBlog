@@ -12,6 +12,7 @@ import { HiArrowLeft } from 'react-icons/hi'
 import Link from 'next/link'
 import { BlogPost } from '@/types'
 import { useParams } from 'next/navigation'
+import Image from 'next/image'
 
 export default function EditPostPage() {
   const params = useParams()
@@ -194,7 +195,7 @@ export default function EditPostPage() {
             />
             {coverImage && (
               <div className="mt-2 relative h-40 w-full overflow-hidden rounded-md">
-                <img 
+                <Image
                   src={coverImage} 
                   alt="Cover preview" 
                   className="object-cover w-full h-full"

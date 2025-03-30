@@ -26,7 +26,7 @@
  *       500:
  *         description: Server error
  */
-export async function GET(request) {
+export async function GET() {
   try {
     // In a real implementation, this would fetch data from a database
     // For now, we'll return a mock success response
@@ -98,7 +98,7 @@ export async function GET(request) {
  *       500:
  *         description: Server error
  */
-export async function POST(request) {
+export async function POST() {
   try {
     // In a real implementation:
     // 1. Parse the request body

@@ -301,7 +301,7 @@ export default function ContributePage() {
           
           {userPosts.length === 0 ? (
             <div className="text-center py-12 border rounded-lg">
-              <p className="text-muted-foreground">You haven't submitted any posts yet</p>
+              <p className="text-muted-foreground">You haven&apos;t submitted any posts yet</p>
               <Button 
                 className="mt-4 bg-yellow-500 hover:bg-yellow-600"
                 onClick={() => setActiveTab('write')}

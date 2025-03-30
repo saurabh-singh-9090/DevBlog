@@ -24,7 +24,7 @@ function RotatingText() {
     },2000) // Change text every 2 seconds
     
     return () => clearInterval(interval)
-  }, [])
+  }, [phrases.length])
   
   return (
     <div className="h-[60px] sm:h-[70px] relative overflow-hidden">

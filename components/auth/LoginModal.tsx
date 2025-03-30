@@ -97,7 +97,7 @@ export function LoginModal({ isOpen, setIsOpen, onSwitchToSignup }: LoginModalPr
               onClick={onSwitchToSignup}
               disabled={isLoading}
             >
-              Don't have an account? Sign up
+              Don&apos;t have an account? Sign up
             </Button>
             <Button 
               type="submit" 

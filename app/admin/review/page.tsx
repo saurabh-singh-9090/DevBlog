@@ -16,6 +16,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog"
+import Image from 'next/image'
 
 export default function ReviewPage() {
   const router = useRouter()
@@ -187,7 +188,7 @@ export default function ReviewPage() {
                   
                   <div className="flex items-center space-x-3 mb-4">
                     <div className="flex-shrink-0">
-                      <img 
+                      <Image
                         src={post.author.image || ''} 
                         alt={post.author.name} 
                         className="h-8 w-8 rounded-full object-cover"
@@ -241,7 +242,7 @@ export default function ReviewPage() {
           <div className="max-h-[60vh] overflow-y-auto mt-4">
             <div className="relative w-full h-60 mb-6">
               {selectedPost && (
-                <img 
+                <Image
                   src={selectedPost.cover_image} 
                   alt={selectedPost.title}
                   className="absolute inset-0 w-full h-full object-cover rounded-md"

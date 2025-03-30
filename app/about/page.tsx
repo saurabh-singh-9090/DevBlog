@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { ChevronDown, ChevronUp } from 'lucide-react'
 import { useAuth } from '@/context/AuthContext'
+import Image from 'next/image'
 
 export default function AboutPage() {
   const { user } = useAuth()
@@ -55,7 +56,7 @@ export default function AboutPage() {
         <div className="flex flex-col md:flex-row gap-8 my-8 bg-slate-50 dark:bg-slate-800 p-8 rounded-lg">
           <div className="md:w-1/3 flex flex-col items-center">
             <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white dark:border-gray-700 shadow-lg mb-4">
-              <img 
+              <Image
                 src={authorImage}
                 alt="Author Photo" 
                 className="w-full h-full object-cover"
@@ -199,7 +200,7 @@ export default function AboutPage() {
             <ul className="list-disc list-inside mb-6">
               <li>Led the development of a critical application that reduced operational costs by 25%</li>
               <li>Published 3 technical articles in industry-leading publications</li>
-              <li>Winner of the Regional Hackathon 2018 - "Best Innovation" category</li>
+              <li>Winner of the Regional Hackathon 2018 - &quot;Best Innovation&quot; category</li>
               <li>Open source contributor with 500+ stars on GitHub projects</li>
               <li>Speaker at JavaScript Conference 2020 and TechSummit 2021</li>
             </ul>
@@ -234,8 +235,8 @@ export default function AboutPage() {
         <div className="bg-yellow-50 dark:bg-yellow-900/30 border-l-4 border-yellow-500 p-6 rounded-md my-8">
           <h3 className="text-xl font-bold text-yellow-700 dark:text-yellow-400 mb-2">Connect with the Author</h3>
           <p className="mb-4">
-            I'm always open to discussing tech, software development opportunities, or potential collaborations. 
-            Don't hesitate to reach out if you have questions about my articles or want to chat!
+            I&apos;m always open to discussing tech, software development opportunities, or potential collaborations. 
+            Don&apos;t hesitate to reach out if you have questions about my articles or want to chat!
           </p>
           <div className="flex flex-wrap gap-3">
             <a 
@@ -270,8 +271,8 @@ export default function AboutPage() {
         
         <h2>Join Our Community</h2>
         <p>
-          We invite you to join our growing community of developers. Whether you're 
-          a seasoned professional or just starting your journey, there's something 
+          We invite you to join our growing community of developers. Whether you&apos;re 
+          a seasoned professional or just starting your journey, there&apos;s something 
           for everyone at DevBlog.
         </p>
         <p>
@@ -286,7 +287,7 @@ export default function AboutPage() {
         
         <h2>Contact Us</h2>
         <p>
-          Have questions, suggestions, or feedback? We'd love to hear from you! 
+          Have questions, suggestions, or feedback? We&apos;d love to hear from you! 
           Visit our <a href="/contact">contact page</a> to get in touch.
         </p>
 

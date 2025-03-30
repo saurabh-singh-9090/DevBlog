@@ -2,9 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
-import { Card } from '@/components/ui/card'
-import { HiChevronLeft, HiChevronRight } from 'react-icons/hi'
+import { HiChevronRight } from 'react-icons/hi'
 import { FaLaptopCode, FaChalkboardTeacher } from 'react-icons/fa'
 import { RiRocketLine } from 'react-icons/ri'
 
@@ -39,22 +37,6 @@ export function PremiumServicesCarousel() {
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
   }, [])
-
-  const scroll = (direction: 'left' | 'right') => {
-    if (!containerRef.current) return
-    
-    const scrollAmount = 300 // Adjust this value as needed
-    const newPosition = direction === 'left' 
-      ? Math.max(0, scrollPosition - scrollAmount)
-      : Math.min(maxScroll, scrollPosition + scrollAmount)
-    
-    containerRef.current.scrollTo({
-      left: newPosition,
-      behavior: 'smooth'
-    })
-    
-    setScrollPosition(newPosition)
-  }
 
   const handleScroll = () => {
     if (containerRef.current) {

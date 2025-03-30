@@ -2,7 +2,7 @@
 
 import { useParams, notFound } from 'next/navigation'
 import Link from 'next/link'
-import { FaArrowLeft, FaBuilding, FaCalendarAlt, FaUserAlt } from 'react-icons/fa'
+import { FaArrowLeft, FaCalendarAlt, FaUserAlt } from 'react-icons/fa'
 
 // This would typically come from an API or database
 // For now, we'll use the same data as the main page

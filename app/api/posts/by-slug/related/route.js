@@ -189,7 +189,7 @@ export async function GET(request, { params }) {
     const sortedRelatedPosts = relatedPosts
       .sort((a, b) => b.relevanceScore - a.relevanceScore)
       .slice(0, limit)
-      .map(({ relevanceScore, matchingTags, ...post }) => post) // Remove scoring fields from output
+      .map(({ ...post }) => post) // Remove scoring fields from output
     
     return new Response(
       JSON.stringify({

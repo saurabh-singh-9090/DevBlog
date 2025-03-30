@@ -88,7 +88,7 @@ export default function SearchPage() {
       
       {initialQuery && (
         <h2 className="text-xl font-medium mb-6">
-          Search results for: <span className="text-yellow-500">"{initialQuery}"</span>
+          Search results for: <span className="text-yellow-500">&quot;{initialQuery}&quot;</span>
         </h2>
       )}
       
@@ -104,7 +104,7 @@ export default function SearchPage() {
         </div>
       ) : initialQuery ? (
         <div className="py-12 text-center">
-          <p className="text-lg mb-2">No results found for "{initialQuery}"</p>
+          <p className="text-lg mb-2">No results found for &quot;{initialQuery}&quot;</p>
           <p className="text-muted-foreground">
             Try using different keywords or checking for typos
           </p>

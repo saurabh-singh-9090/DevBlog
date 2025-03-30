@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { FaBuilding, FaCalendarAlt, FaUserAlt } from 'react-icons/fa'
+import { FaCalendarAlt, FaUserAlt } from 'react-icons/fa'
 
 type InterviewExperience = {
   id: string

@@ -21,6 +21,7 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import Image from 'next/image'
 
 export default function NewPostPage() {
   const router = useRouter()
@@ -271,7 +272,7 @@ export default function NewPostPage() {
               
               {(imagePreview || coverImage) && (
                 <div className="mt-2 relative h-48 w-full overflow-hidden rounded-md">
-                  <img 
+                  <Image
                     src={imagePreview || coverImage} 
                     alt="Cover preview" 
                     className="object-cover w-full h-full"

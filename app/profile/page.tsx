@@ -21,6 +21,7 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { FaCloudUploadAlt, FaGoogle, FaDropbox, FaDownload, FaUser } from 'react-icons/fa'
 import { Loader2 } from 'lucide-react'
+import Image from 'next/image'
 
 export default function ProfileSettingsPage() {
   const router = useRouter()
@@ -220,7 +221,7 @@ console.log(imagePreview)
             <div className="flex flex-col items-center sm:items-start sm:flex-row gap-4">
               <div className="relative h-24 w-24 rounded-full border overflow-hidden bg-muted flex items-center justify-center">
                 {imagePreview.length > 0 ? (
-                  <img 
+                  <Image
                     src={imagePreview} 
                     alt={formData.name} 
                     className="h-full w-full object-cover"
