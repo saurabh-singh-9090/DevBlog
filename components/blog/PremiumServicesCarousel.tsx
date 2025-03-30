@@ -20,8 +20,8 @@ type PremiumService = {
 
 export function PremiumServicesCarousel() {
   const containerRef = useRef<HTMLDivElement>(null)
-  const [scrollPosition, setScrollPosition] = useState(0)
-  const [maxScroll, setMaxScroll] = useState(0)
+  const [, setScrollPosition] = useState(0)
+  const [, setMaxScroll] = useState(0)
 
   useEffect(() => {
     if (containerRef.current) {

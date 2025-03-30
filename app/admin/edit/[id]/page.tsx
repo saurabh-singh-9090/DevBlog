@@ -6,7 +6,7 @@ import { useAuth } from '@/context/AuthContext'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-import { categories, getPostById, updatePost } from '@/lib/data/mockData'
+import { categories, getPostById } from '@/lib/data/mockData'
 import { toast } from 'sonner'
 import { HiArrowLeft } from 'react-icons/hi'
 import Link from 'next/link'
@@ -89,19 +89,6 @@ export default function EditPostPage() {
       const selectedCategory = categories.find(cat => cat.id === categoryId)
       if (!selectedCategory) {
         throw new Error('Invalid category')
-      }
-      
-      // Update the post
-      const updatedPost = updatePost(id, {
-        title,
-        excerpt,
-        content,
-        cover_image: coverImage,
-        category: selectedCategory
-      })
-      
-      if (!updatedPost) {
-        throw new Error('Failed to update post')
       }
       
       toast.success('Post updated successfully!')
