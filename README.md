@@ -1,5 +1,11 @@
 # DevBlog - Technical Content Platform
 
+# Live website - https://dev-blog-by-saurabh.netlify.app/
+
+# Website snapshots:
+<img width="1378" alt="image" src="https://github.com/user-attachments/assets/da8978db-1682-479e-880a-0a9def10aa7b" />
+<img width="1367" alt="image" src="https://github.com/user-attachments/assets/5df1247e-bab6-463d-b1e7-1e6527b17213" />
+
 ## Project Overview
 DevBlog is a modern, feature-rich technical blog platform built for developers to share insights, tutorials, and best practices in software development. The application provides a rich reading experience with features like article categorization, likes, comments, and user authentication.
 
