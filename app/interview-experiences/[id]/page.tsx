@@ -22,11 +22,11 @@ const interviewExperiences = [
 
 The interview process at Google consisted of 5 rounds:
 
-1. **Phone Screen**: 45-minute technical interview with a Google engineer
-2. **Online Assessment**: LeetCode-style problems to solve in a timed environment
-3. **Technical Interview 1**: Data structures and algorithm questions
-4. **Technical Interview 2**: System design and architecture
-5. **Behavioral Interview**: Questions about my past experiences and challenges
+1. Phone Screen: 45-minute technical interview with a Google engineer
+2. Online Assessment: LeetCode-style problems to solve in a timed environment
+3. Technical Interview 1: Data structures and algorithm questions
+4. Technical Interview 2: System design and architecture
+5. Behavioral Interview: Questions about my past experiences and challenges
 
 ## Technical Questions
 
@@ -63,9 +63,9 @@ I received an offer one week after my final interview. The entire process took a
 
 The Microsoft interview process consisted of 4 rounds:
 
-1. **Initial Screening**: 30-minute call with a recruiter
-2. **Technical Phone Interview**: 60-minute coding interview
-3. **Virtual Onsite (3 interviews)**:
+1. Initial Screening: 30-minute call with a recruiter
+2. Technical Phone Interview: 60-minute coding interview
+3. Virtual Onsite (3 interviews):
    - Coding interview focusing on data structures
    - System design interview
    - Behavioral interview with the hiring manager

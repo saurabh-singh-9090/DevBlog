@@ -134,12 +134,12 @@ export default function CareerGuidancePage() {
         {careerGuidancePlans.map((plan) => (
           <Card 
             key={plan.id} 
-            className={`cursor-pointer transition-all hover:shadow-md flex flex-col h-full ${selectedPlan === plan.id ? 'border-primary ring-2 ring-primary' : ''}`}
+            className={`cursor-pointer transition-all hover:shadow-md flex flex-col py-6 h-full ${selectedPlan === plan.id ? 'border-primary ring-2 ring-primary' : ''}`}
             onClick={() => setSelectedPlan(plan.id)}
           >
             <CardHeader>
               <CardTitle>{plan.name}</CardTitle>
-              <CardDescription>${plan.price}</CardDescription>
+              <CardDescription>₹{plan.price}</CardDescription>
             </CardHeader>
             <CardContent className="flex-grow">
               <ul className="space-y-2 text-sm">
@@ -166,7 +166,7 @@ export default function CareerGuidancePage() {
 
       {selectedPlan && (
         <div className="space-y-8">
-          <Card>
+          <Card className="py-6">
             <CardHeader>
               <CardTitle>Your Background & Goals</CardTitle>
               <CardDescription>Help us understand how we can best assist you</CardDescription>
@@ -223,7 +223,7 @@ export default function CareerGuidancePage() {
             </CardContent>
           </Card>
 
-          <Card className="mb-8">
+          <Card className="mb-8 py-6">
             <CardHeader>
               <CardTitle>Your Booking Summary</CardTitle>
               <CardDescription>Review your selection before booking</CardDescription>
@@ -232,7 +232,7 @@ export default function CareerGuidancePage() {
               <div className="space-y-4">
                 <div>
                   <h3 className="font-medium text-sm mb-1">Selected Plan</h3>
-                  <p>{getSelectedPlan()?.name} - ${getSelectedPlan()?.price}</p>
+                  <p>{getSelectedPlan()?.name} - ₹{getSelectedPlan()?.price}</p>
                 </div>
                 {selectedMentorType && (
                   <div>
@@ -258,7 +258,7 @@ export default function CareerGuidancePage() {
                     Processing...
                   </>
                 ) : (
-                  <>Book & Pay ${getSelectedPlan()?.price}</>
+                  <>Book & Pay ₹{getSelectedPlan()?.price}</>
                 )}
               </Button>
             </CardFooter>
@@ -269,7 +269,7 @@ export default function CareerGuidancePage() {
       <div className="space-y-4 mt-12">
         <h2 className="text-2xl font-bold">How Our Career Guidance Works</h2>
         <div className="grid gap-4 md:grid-cols-3">
-          <Card>
+          <Card className="py-6">
             <CardHeader>
               <CardTitle>1. Book & Share Your Goals</CardTitle>
             </CardHeader>
@@ -277,7 +277,7 @@ export default function CareerGuidancePage() {
               <p>Select a plan and tell us about your career aspirations and current situation. This helps us match you with the right mentor.</p>
             </CardContent>
           </Card>
-          <Card>
+          <Card className="py-6">
             <CardHeader>
               <CardTitle>2. Meet Your Mentor</CardTitle>
             </CardHeader>
@@ -285,7 +285,7 @@ export default function CareerGuidancePage() {
               <p>Connect with your mentor via video call. They&apos;ll provide personalized guidance based on their industry experience and your specific goals.</p>
             </CardContent>
           </Card>
-          <Card>
+          <Card className="py-6">
             <CardHeader>
               <CardTitle>3. Implement & Follow Up</CardTitle>
             </CardHeader>

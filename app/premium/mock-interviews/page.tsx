@@ -131,7 +131,7 @@ export default function MockInterviewsPage() {
         {mockInterviewPlans.map((plan) => (
           <Card 
             key={plan.id} 
-            className={`cursor-pointer transition-all hover:shadow-md flex flex-col h-full ${selectedPlan === plan.id ? 'border-primary ring-2 ring-primary' : ''}`}
+            className={`cursor-pointer transition-all hover:shadow-md flex flex-col py-6 h-full ${selectedPlan === plan.id ? 'border-primary ring-2 ring-primary' : ''}`}
             onClick={() => setSelectedPlan(plan.id)}
           >
             <CardHeader>
@@ -163,7 +163,7 @@ export default function MockInterviewsPage() {
 
       {selectedPlan && (
         <div className="grid gap-8 md:grid-cols-2 mb-8">
-          <Card>
+          <Card className="py-6">
             <CardHeader>
               <CardTitle>Select Date</CardTitle>
               <CardDescription>Choose your preferred interview date</CardDescription>
@@ -186,7 +186,7 @@ export default function MockInterviewsPage() {
             </CardContent>
           </Card>
 
-          <Card>
+          <Card className="py-6">
             <CardHeader>
               <CardTitle>Select Time</CardTitle>
               <CardDescription>Choose your preferred interview time</CardDescription>
@@ -208,7 +208,7 @@ export default function MockInterviewsPage() {
       )}
 
       {selectedPlan && selectedDate && selectedTime && (
-        <Card className="mb-8">
+        <Card className="mb-8 py-6">
           <CardHeader>
             <CardTitle>Your Interview</CardTitle>
             <CardDescription>Review your selection before booking</CardDescription>
@@ -217,7 +217,7 @@ export default function MockInterviewsPage() {
             <div className="grid gap-4 md:grid-cols-3">
               <div>
                 <h3 className="font-medium text-sm mb-1">Selected Plan</h3>
-                <p>{getSelectedPlan()?.name} - ${getSelectedPlan()?.price}</p>
+                <p>{getSelectedPlan()?.name} - ₹{getSelectedPlan()?.price}</p>
               </div>
               <div>
                 <h3 className="font-medium text-sm mb-1">Date</h3>
@@ -246,7 +246,7 @@ export default function MockInterviewsPage() {
                   Processing...
                 </>
               ) : (
-                <>Book & Pay ${getSelectedPlan()?.price}</>
+                <>Book & Pay ₹{getSelectedPlan()?.price}</>
               )}
             </Button>
           </CardFooter>
@@ -256,7 +256,7 @@ export default function MockInterviewsPage() {
       <div className="space-y-4">
         <h2 className="text-2xl font-bold">How Our Mock Interviews Work</h2>
         <div className="grid gap-4 md:grid-cols-3">
-          <Card>
+          <Card className="py-6">
             <CardHeader>
               <CardTitle>1. Book & Prepare</CardTitle>
             </CardHeader>
@@ -264,7 +264,7 @@ export default function MockInterviewsPage() {
               <p>Select a plan, choose your date and time, and complete your booking. You&apos;ll receive preparation materials and instructions via email.</p>
             </CardContent>
           </Card>
-          <Card>
+          <Card className="py-6">
             <CardHeader>
               <CardTitle>2. Attend Interview</CardTitle>
             </CardHeader>
@@ -272,7 +272,7 @@ export default function MockInterviewsPage() {
               <p>Join the video call at your scheduled time. Your interviewer will conduct a realistic technical interview based on your target role.</p>
             </CardContent>
           </Card>
-          <Card>
+          <Card className="py-6">
             <CardHeader>
               <CardTitle>3. Get Feedback</CardTitle>
             </CardHeader>
