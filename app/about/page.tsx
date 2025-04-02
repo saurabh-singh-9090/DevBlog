@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 export default function AboutPage() {
   const { user } = useAuth()
-  const [expandedCompany, setExpandedCompany] = useState<string | null>('TechCorp')
+  const [expandedCompany, setExpandedCompany] = useState<string | null>('Allcaps')
   const [authorImage, setAuthorImage] = useState('author.png')
 
   useEffect(() => {
@@ -27,45 +27,32 @@ export default function AboutPage() {
 
   return (
     <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-      <h1 className="text-4xl font-bold mb-6">About DevBlog</h1>
-      
-      <div className="prose prose-lg max-w-none">
-        <p>
-          Welcome to DevBlog, a professional platform dedicated to sharing knowledge,
-          insights, and best practices in software development. Our mission is to create 
-          a community of learners and experts who can collaborate and grow together.
-        </p>
-        
-        <h2>Our Mission</h2>
-        <p>
-          At DevBlog, we believe that knowledge should be accessible to everyone. 
-          We strive to create high-quality, in-depth content that helps developers 
-          of all skill levels improve their craft and stay updated with the latest 
-          technologies and trends.
-        </p>
-        
-        <h2>Our Team</h2>
-        <p>
-          Our team consists of passionate developers, technical writers, and industry 
-          experts who are committed to creating valuable content. Each member brings 
-          a unique perspective and expertise, ensuring a diverse range of topics and 
-          approaches.
-        </p>
-        
-        <h2>About the Author</h2>
+      <h1 className="text-4xl font-bold mb-6">About the Author</h1>
+
         <div className="flex flex-col md:flex-row gap-8 my-8 bg-slate-50 dark:bg-slate-800 p-8 rounded-lg">
           <div className="md:w-1/3 flex flex-col items-center">
             <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white dark:border-gray-700 shadow-lg mb-4">
               <Image
-                src={authorImage}
+                src={`/${authorImage}`}
                 alt="Author Photo" 
                 className="w-full h-full object-cover"
+                width={100}
+                height={100}
               />
             </div>
             <div className="mt-6 flex flex-col space-y-2">
               <h3 className="text-xl font-semibold">Connect with me</h3>
               <a 
-                href="https://linkedin.com/in/yourusername" 
+                href="https://saurabh-kumar-singh.netlify.app/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300"
+              >
+                <svg width="24px" height="24px" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 1a6.5 6.5 0 1 1 0 13 6.5 6.5 0 0 1 0-13zm4.894 4a5.527 5.527 0 0 0-3.053-2.676c.444.84.765 1.74.953 2.676h2.1zm.582 2.995A5.11 5.11 0 0 0 14 7.5a5.464 5.464 0 0 0-.213-1.5h-2.342c.032.331.055.664.055 1a10.114 10.114 0 0 1-.206 2h2.493c.095-.329.158-.665.19-1.005zm-3.535 0l.006-.051A9.04 9.04 0 0 0 10.5 7a8.994 8.994 0 0 0-.076-1H6.576A8.82 8.82 0 0 0 6.5 7a8.98 8.98 0 0 0 .233 2h3.534c.077-.332.135-.667.174-1.005zM10.249 5a8.974 8.974 0 0 0-1.255-2.97C8.83 2.016 8.666 2 8.5 2a3.62 3.62 0 0 0-.312.015l-.182.015L8 2.04A8.97 8.97 0 0 0 6.751 5h3.498zM5.706 5a9.959 9.959 0 0 1 .966-2.681A5.527 5.527 0 0 0 3.606 5h2.1zM3.213 6A5.48 5.48 0 0 0 3 7.5 5.48 5.48 0 0 0 3.213 9h2.493A10.016 10.016 0 0 1 5.5 7c0-.336.023-.669.055-1H3.213zm2.754 4h-2.36a5.515 5.515 0 0 0 3.819 2.893A10.023 10.023 0 0 1 5.967 10zM8.5 12.644A8.942 8.942 0 0 0 9.978 10H7.022A8.943 8.943 0 0 0 8.5 12.644zM11.033 10a10.024 10.024 0 0 1-1.459 2.893A5.517 5.517 0 0 0 13.393 10h-2.36z"/></svg>
+                My Portfolio
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/saurabh-singh-kumar/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300"
@@ -76,16 +63,16 @@ export default function AboutPage() {
                 LinkedIn Profile
               </a>
               <a 
-                href="mailto:author@example.com" 
+                href="mailto:90360saurabh@gmail.com" 
                 className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
                   <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path>
                 </svg>
-                author@example.com
+                90360saurabh@gmail.com
               </a>
               <a 
-                href="https://github.com/yourusername" 
+                href="https://github.com/saurabh-singh-9090/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300"
@@ -102,38 +89,39 @@ export default function AboutPage() {
             
             {/* Experience accordions */}
             <div className="space-y-3">
-              {/* TechCorp */}
+              {/* Allcaps */}
               <div className="border rounded-md overflow-hidden dark:border-gray-700">
                 <button 
                   className={`flex justify-between items-center w-full p-4 text-left ${
-                    expandedCompany === 'TechCorp' 
+                    expandedCompany === 'Allcaps' 
                       ? 'bg-blue-50 dark:bg-blue-900/30' 
                       : 'bg-white dark:bg-gray-800'
                   }`}
-                  onClick={() => toggleCompany('TechCorp')}
+                  onClick={() => toggleCompany('Allcaps')}
                 >
                   <div>
-                    <h4 className="text-xl font-semibold">Senior Software Engineer</h4>
-                    <p className="text-gray-600 dark:text-gray-400">TechCorp Inc. | 2019 - Present</p>
+                    <h4 className="text-xl font-semibold">Founding Software Engineer</h4>
+                    <p className="text-gray-600 dark:text-gray-400">Allcaps Teachnologies Pvt Ltd. | 2024 - Present</p>
                   </div>
-                  {expandedCompany === 'TechCorp' ? (
+                  {expandedCompany === 'Allcaps' ? (
                     <ChevronUp className="h-5 w-5 text-gray-500 dark:text-gray-400" />
                   ) : (
                     <ChevronDown className="h-5 w-5 text-gray-500 dark:text-gray-400" />
                   )}
                 </button>
-                {expandedCompany === 'TechCorp' && (
+                {expandedCompany === 'Allcaps' && (
                   <div className="p-4 border-t bg-white dark:bg-gray-800 dark:border-gray-700">
-                    <p>
-                      Lead development of cloud-native applications using modern JavaScript frameworks (React, Node.js).
-                      Architected and implemented microservices architecture that improved system scalability by 40%.
-                      Mentored junior developers and led technical training sessions for the development team.
-                    </p>
+                      <ul>
+                        <li>• Developed frontend solutions for B2B SaaS AI-based product called Calm™ AI from end to end.</li>
+                        <li>• Developed a scalable and maintainable codebase using NextJs, TypeScript and Tailwind Css.</li>
+                        <li>• Integrated Sentry for monitoring client side errors and implemented an efficient error handling mechanism throughout the application.</li>
+                        <li>• Integrated Mixpanel for analytics and implemented a robust analytics system to track user behavior and improve the overall user experience.</li>
+                      </ul>
                   </div>
                 )}
               </div>
               
-              {/* InnovateSoft */}
+              {/* KreditBee */}
               <div className="border rounded-md overflow-hidden dark:border-gray-700">
                 <button 
                   className={`flex justify-between items-center w-full p-4 text-left ${
@@ -144,8 +132,8 @@ export default function AboutPage() {
                   onClick={() => toggleCompany('InnovateSoft')}
                 >
                   <div>
-                    <h4 className="text-xl font-semibold">Full Stack Developer</h4>
-                    <p className="text-gray-600 dark:text-gray-400">InnovateSoft | 2016 - 2019</p>
+                    <h4 className="text-xl font-semibold">Software Developer</h4>
+                    <p className="text-gray-600 dark:text-gray-400">KreditBee | 2023 - 2024</p>
                   </div>
                   {expandedCompany === 'InnovateSoft' ? (
                     <ChevronUp className="h-5 w-5 text-gray-500 dark:text-gray-400" />
@@ -155,80 +143,27 @@ export default function AboutPage() {
                 </button>
                 {expandedCompany === 'InnovateSoft' && (
                   <div className="p-4 border-t bg-white dark:bg-gray-800 dark:border-gray-700">
-                    <p>
-                      Developed and maintained web applications for clients across various industries.
-                      Implemented responsive UI designs using React and Angular.
-                      Collaborated with cross-functional teams to deliver projects on time and within budget.
-                    </p>
-                  </div>
-                )}
-              </div>
-              
-              {/* StartupHub */}
-              <div className="border rounded-md overflow-hidden dark:border-gray-700">
-                <button 
-                  className={`flex justify-between items-center w-full p-4 text-left ${
-                    expandedCompany === 'StartupHub' 
-                      ? 'bg-blue-50 dark:bg-blue-900/30' 
-                      : 'bg-white dark:bg-gray-800'
-                  }`}
-                  onClick={() => toggleCompany('StartupHub')}
-                >
-                  <div>
-                    <h4 className="text-xl font-semibold">Junior Web Developer</h4>
-                    <p className="text-gray-600 dark:text-gray-400">StartupHub | 2014 - 2016</p>
-                  </div>
-                  {expandedCompany === 'StartupHub' ? (
-                    <ChevronUp className="h-5 w-5 text-gray-500 dark:text-gray-400" />
-                  ) : (
-                    <ChevronDown className="h-5 w-5 text-gray-500 dark:text-gray-400" />
-                  )}
-                </button>
-                {expandedCompany === 'StartupHub' && (
-                  <div className="p-4 border-t bg-white dark:bg-gray-800 dark:border-gray-700">
-                    <p>
-                      Built and maintained client websites using HTML, CSS, JavaScript, and PHP.
-                      Worked in an agile environment with daily stand-ups and two-week sprints.
-                      Assisted in the launch of 15+ successful client websites.
-                    </p>
+                    <ul>
+                      <li>• Enhanced the Kreditbee website performance by 10% through optimizing the core web vitals and webpage assets.</li>
+                      <li>• Introduced Video KYC Nudge in the Profile creation flow, utilized by over 1 Crore users on the KreditBee app.</li>
+                      <li>• Implemented seamless integration of frontend solutions with backend developers for Video KYC processes and enhanced the Profile Re-verification system, optimizing the verification workflow.</li>
+                      <li>• Implemented responsive design principles to enhance user experiences across devices and collaborated with cross-functional teams to develop user-friendly interfaces for financial products.</li>
+                    </ul>
                   </div>
                 )}
               </div>
             </div>
             
-            <h3 className="text-2xl font-bold mt-8 mb-4">Achievements</h3>
-            <ul className="list-disc list-inside mb-6">
-              <li>Led the development of a critical application that reduced operational costs by 25%</li>
-              <li>Published 3 technical articles in industry-leading publications</li>
-              <li>Winner of the Regional Hackathon 2018 - &quot;Best Innovation&quot; category</li>
-              <li>Open source contributor with 500+ stars on GitHub projects</li>
-              <li>Speaker at JavaScript Conference 2020 and TechSummit 2021</li>
-            </ul>
-            
-            <h3 className="text-2xl font-bold mt-8 mb-4">Education</h3>
+            <h3 className="text-2xl font-bold mt-8 mb-4">Qualifications</h3>
             <div className="mb-6">
-              <h4 className="text-xl font-semibold">Master of Science in Computer Science</h4>
-              <p className="text-gray-600 dark:text-gray-400">Tech University | 2012 - 2014</p>
-              <p className="mt-2">
-                Specialization in Software Engineering and Artificial Intelligence
-              </p>
+              <h4 className="text-xl font-semibold">Bachelor of Technology</h4>
+              <p className="text-gray-600 dark:text-gray-400">IIIT Bhubaneswar | 2019 - 2023 | ECE</p>
             </div>
             
             <div className="mb-6">
-              <h4 className="text-xl font-semibold">Bachelor of Science in Computer Science</h4>
-              <p className="text-gray-600 dark:text-gray-400">State University | 2008 - 2012</p>
-              <p className="mt-2">
-                Minor in Mathematics. Graduated with honors (Cum Laude)
-              </p>
+              <h4 className="text-xl font-semibold">Senior Secondary (CBSE)</h4>
+              <p className="text-gray-600 dark:text-gray-400">Sri Chaitanya, Vizag | 2018 | Science(PCM)</p>
             </div>
-            
-            <h3 className="text-2xl font-bold mt-8 mb-4">Certifications</h3>
-            <ul className="list-disc list-inside mb-6">
-              <li>AWS Certified Solutions Architect</li>
-              <li>Google Cloud Professional Developer</li>
-              <li>MongoDB Certified Developer</li>
-              <li>Certified Scrum Master</li>
-            </ul>
           </div>
         </div>
 
@@ -255,27 +190,37 @@ export default function AboutPage() {
             </a>
           </div>
         </div>
-        
-        <h2>Our Content</h2>
+      
+      <div className="prose prose-lg max-w-none">
         <p>
-          We cover a wide range of topics including but not limited to:
-        </p>
-        <ul>
-          <li>Frontend development (React, Vue, Angular)</li>
-          <li>Backend development (Node.js, Python, Java)</li>
-          <li>Mobile development (React Native, Flutter)</li>
-          <li>DevOps and cloud technologies</li>
-          <li>Software architecture and design patterns</li>
-          <li>Career advice and professional growth</li>
-        </ul>
+          Welcome to DevBlog, a professional platform dedicated to sharing knowledge,
+          insights, and best practices in software development. Our mission is to create 
+          a community of learners and experts who can collaborate and grow together.
+        </p><br/>
         
-        <h2>Join Our Community</h2>
+        <h2 className='text-xl font-semibold'>Our Mission</h2>
+        <p>
+          At DevBlog, we believe that knowledge should be accessible to everyone. 
+          We strive to create high-quality, in-depth content that helps developers 
+          of all skill levels improve their craft and stay updated with the latest 
+          technologies and trends.
+        </p><br/>
+        
+        <h2 className='text-xl font-semibold'>Our Team</h2>
+        <p>
+          Our team consists of passionate developers, technical writers, and industry 
+          experts who are committed to creating valuable content. Each member brings 
+          a unique perspective and expertise, ensuring a diverse range of topics and 
+          approaches.
+        </p><br/>
+        
+        <h2 className='text-xl font-semibold'>Join Our Community</h2>
         <p>
           We invite you to join our growing community of developers. Whether you&apos;re 
           a seasoned professional or just starting your journey, there&apos;s something 
           for everyone at DevBlog.
-        </p>
-        <p>
+        </p><br/>
+        <p className='text-lg font-bold'>
           You can contribute to our platform by:
         </p>
         <ul>
@@ -283,12 +228,12 @@ export default function AboutPage() {
           <li>Engaging with our content through comments and discussions</li>
           <li>Sharing our articles with your network</li>
           <li>Providing feedback to help us improve</li>
-        </ul>
+        </ul><br/>
         
-        <h2>Contact Us</h2>
+        <h2 className='text-xl font-semibold'>Contact Us</h2>
         <p>
           Have questions, suggestions, or feedback? We&apos;d love to hear from you! 
-          Visit our <a href="/contact">contact page</a> to get in touch.
+          Visit our <a href="/contact"><b>contact page</b></a> to get in touch.
         </p>
 
       </div>
