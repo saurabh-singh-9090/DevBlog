@@ -55,18 +55,18 @@ export default function ContactPage() {
               </div>
               <div>
                 <h3 className="font-medium">Email</h3>
-                <p className="text-muted-foreground">contact@devblog.com</p>
+                <p className="text-muted-foreground">90360saurabh@gmail.com</p>
               </div>
             </div>
             
             <div className="flex items-center gap-4">
-              <div className="h-10 w-10 rounded-full bg-yellow-500/10 text-yellow-500 flex items-center justify-center">
+              {/* <div className="h-10 w-10 rounded-full bg-yellow-500/10 text-yellow-500 flex items-center justify-center">
                 <HiPhone className="h-5 w-5" />
               </div>
               <div>
                 <h3 className="font-medium">Phone</h3>
-                <p className="text-muted-foreground">+1 (123) 456-7890</p>
-              </div>
+                <p className="text-muted-foreground"></p>
+              </div> */}
             </div>
             
             <div className="flex items-center gap-4">
@@ -75,7 +75,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <h3 className="font-medium">Address</h3>
-                <p className="text-muted-foreground">123 Developer Ave, Tech City, CA 94043</p>
+                <p className="text-muted-foreground">Bangalore, Kormangala, India</p>
               </div>
             </div>
           </div>
