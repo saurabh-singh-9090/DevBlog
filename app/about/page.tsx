@@ -206,13 +206,13 @@ export default function AboutPage() {
           technologies and trends.
         </p><br/>
         
-        <h2 className='text-xl font-semibold'>Our Team</h2>
+        {/* <h2 className='text-xl font-semibold'>Our Team</h2>
         <p>
           Our team consists of passionate developers, technical writers, and industry 
           experts who are committed to creating valuable content. Each member brings 
           a unique perspective and expertise, ensuring a diverse range of topics and 
           approaches.
-        </p><br/>
+        </p><br/> */}
         
         <h2 className='text-xl font-semibold'>Join Our Community</h2>
         <p>

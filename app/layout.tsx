@@ -10,7 +10,7 @@ import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "DevBlog - Technical Content for Developers",
+  title: "DevBlog - Ultimate resource for Developers",
   description: "A professional blog for developers sharing insights, tutorials, and best practices in software development.",
 };
 
