@@ -190,7 +190,7 @@ export default function ContributePage() {
       </div>
       
       {activeTab === 'write' ? (
-        <Card>
+        <Card className='py-6'>
           <CardHeader>
             <CardTitle>Write a New Post</CardTitle>
             <CardDescription>
