@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { toast } from 'sonner'
-import { HiMail, HiPhone, HiLocationMarker } from 'react-icons/hi'
+import { HiMail, HiLocationMarker } from 'react-icons/hi'
 
 export default function ContactPage() {
   const [name, setName] = useState('')
